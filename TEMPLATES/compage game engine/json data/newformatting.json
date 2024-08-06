@@ -1,0 +1,65 @@
+{
+	"data": {
+		"objects": {
+			"testobject": {
+				"scripts": [
+					"printtest"
+				],
+
+				"render": true,
+				"x": 0,
+				"y": 0,
+				"xv": 0,
+				"yv": 0,
+				"direction": 90,
+				"dv": 0,
+				"textures": [
+					"costume1"
+				],
+				"texture": 1
+			},
+
+			"camera": {
+				"scripts": [
+
+				],
+
+				"render": false,
+				"x": 0,
+				"y": 0,
+				"xv": 0,
+				"yv": 0,
+				"direction": 90,
+				"dv": 0,
+				"textures": [
+
+				],
+				"texture": null
+			}
+		}
+	},
+
+	"screen": {
+		"camera": {
+			"type": "camera",
+			"x": 0,
+			"y": 0
+		},
+
+		"objectnamehere": {
+			"type": "testobject",
+			"x": 100,
+			"y": 0,
+			"xv": 0,
+			"yv": 4,
+			"direction": 90
+		}
+	},
+
+	"scripts": {
+		"printtest": [
+			["private-event", "start", {"configuration": [{"type": "repeat", "input": 10}]}],
+			["console.log", "Hello World!"]
+		]
+	}
+}
